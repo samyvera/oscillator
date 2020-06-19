@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Oscillator</title>
+    <meta charset="utf-8">
+    <link rel="icon" href="favicon.png">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <div id="container">
+        <fieldset>
+            <legend>Oscillator</legend>
+            <button onclick="start()">Start</button>
+            <button onclick="stop()">Stop</button>
+            <hr>
+            <label for="frequency">Frequency</label>
+            <input id="frequency" style="width:300px" type="range" name="frequency" value="440"
+                onchange="frequency=this.value" min="0" max="2000" step="1">
+            <label id="frequency-display" for="frequency">440</label>
+            <br>
+            <label for="gain">Gain</label>
+            <input id="gain" style="width:200px" type="range" name="gain" value="0"
+                onchange="gain=this.value" min="-1" max="1" step=".1">
+            <label id="gain-display" for="gain">0</label>
+            <hr>
+            <label for="type">Wave Shape</label>
+            <select id="type" name="type">
+                <option value="sine">Sine</option>
+                <option value="square">Square</option>
+                <option value="triangle">Triangle</option>
+                <option value="sawtooth">Sawtooth</option>
+            </select>
+        </fieldset>
+        <canvas id="canvas"></canvas>
+    </div>
+</body>
+
+</html>

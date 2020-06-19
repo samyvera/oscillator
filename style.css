@@ -1,0 +1,16 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    background: linear-gradient(#224, #4488), radial-gradient(#88f, #224);
+    color: #fff;
+    overflow: hidden;
+}
+
+#container {
+    margin: auto;
+}
